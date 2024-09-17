@@ -30,6 +30,9 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
         if (SystemUtils.IS_OS_MAC) {
             openCommand = "open ";
         }
+        else if (SystemUtils.IS_OS_WINDOWS) {
+            openCommand = "cmd /c start ";
+        }
 
         Runtime rt = Runtime.getRuntime();
         try {
