@@ -135,7 +135,7 @@ public class GetLikedAlbums {
         for (Map.Entry<SavedAlbum, List<TrackSimplified>> albumTracks : albumsWithTracks.entrySet()) {
             builder.append(albumTracks.getKey().getAlbum().getName()).append("<br/>");
             for (TrackSimplified track : albumTracks.getValue()) {
-                builder.append("--->>> id: ").append(track.getId()).append(" --- ").append(track.getName()).append("<br/>");
+                builder.append("-> id: ").append(track.getId()).append(" --- ").append(track.getName()).append("<br/>");
             }
         }
 

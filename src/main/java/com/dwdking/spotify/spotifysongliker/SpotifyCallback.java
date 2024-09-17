@@ -38,7 +38,7 @@ public class SpotifyCallback {
 
 		applicationCredentials.persist();
 
-		return "Authorization provided to shopify";
+		return "Authorization provided to Spotify";
 	}
 
 }
